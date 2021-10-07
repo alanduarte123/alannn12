@@ -5,6 +5,9 @@ input.onButtonPressed(Button.A, function () {
         music.playMelody("C5 - C5 - - - - - ", 500)
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+})
 input.onButtonPressed(Button.B, function () {
     if (reading < 12) {
         basic.showIcon(IconNames.No)
@@ -23,6 +26,3 @@ basic.showLeds(`
 basic.pause(200)
 basic.clearScreen()
 basic.showString("Hola")
-basic.forever(function () {
-	
-})
